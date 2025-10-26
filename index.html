@@ -1,31 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MP</title>
-</head>
-<body>
-    
-    <div style="background-color: brown; flex-direction: row; flex: content; row-gap: 30px; color: aliceblue; align-items: center; justify-content: center; padding: 30px; border-radius: 30px; width: 20em;">
-        <div style="flex: auto;">
-            (malas install tailwind)
+  </head>
+  <style>
+    ::selection {
+      background-color: #08561d;
+      color: white;
+    }
+  </style>
+  <body
+    style="
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    "
+  >
+    <div style="display: flex; flex-direction: columns; gap: 20px; max-width: max-content; height: auto;">
+      <div
+        style="
+          background-color: brown;
+          flex-direction: row;
+          flex: content;
+          row-gap: 30px;
+          color: aliceblue;
+          align-items: center;
+          justify-content: center;
+          padding: 30px;
+          border-radius: 30px;
+          width: 20em;
+        "
+      >
+        <div style="flex: auto">(malas install tailwind)</div>
+
+        <div style="flex: auto; margin-top: 20px">
+          <h1>RANGKUMAN GIT 2 MINGGU LALU</h1>
+
+          <h2>Basic Workflow</h2>
+
+          <ul>
+            <li>git status: Cek status file</li>
+            <li>git add . : Stage semua perubahan</li>
+            <li>git commit -m "pesan" : Simpan perubahan</li>
+            <li>git push: Upload ke remote</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Download atau Update</h2>
+
+          <ul>
+            <li>git pull: Download + merge perubahan terbaru</li>
+            <li>git fetch: Cek update tanpa merge</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Branch management</h2>
+          <ul>
+            <li>git branch: Lihat semua branch</li>
+            <li>git branch namabranch: Buat branch baru</li>
+            <li>git checkout namabranch: Pindah branch</li>
+            <li>git switch namabranch: Alternatif pindah branch</li>
+            <li>git merge namabranch: Gabungkan branch</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Remote management</h2>
+          <ul>
+            <li>git remote -v: Lihat semua remote</li>
+            <li>git remote add nama url: Tambah remote baru</li>
+            <li>git push nama-remote main: Push ke remote tertentu</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Git Config</h2>
+          <ul>
+            <li>git config --global user.name "nama"</li>
+            <li>git config --global user.email "email"</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Check History</h2>
+          <ul>
+            <li>git log: Lihat commit history</li>
+            <li>git log --oneline: History versi singkat</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Undo/Fix</h2>
+          <ul>
+            <li>git restore file.txt: Batalkan perubahan file</li>
+            <li>git reset --soft HEAD~1: Batalkan commit terakhir</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="width: 1000px; height: auto; background-color: rgb(255, 194, 194); border: 1px; border-color: brown; border-style: dashed; display: flex; flex-direction: column; border-radius: 20px; justify-content: center; align-items: center;">
+        <div style="display: flex; padding-right: 30px;">
+            <h1 style="color: #092a11;">GitLab dan BitBucket</h1>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center;">
             
+            <img src="/assets/gitlab.png" alt="ss gitlab cuy" style="width: 640px; border-radius: 20px; display: flex;">
+
+            <img src="/assets/bitbucket.png" alt="ss bitbucket anzay" style="width: 640px; border-radius: 20px; display: flex;">
+
+            <img src="/assets/terminal.png" alt="done king" style="width: 640px; border-radius: 20px; display: flex;">
         </div>
 
-        <div style="flex: auto; margin-top: 20px;">
-            rangkuman dari git dua minggu lalu adalah
-
-            <ul>
-                <li>
-                    
-                </li>
-            </ul>
-        </div>
-
+      </div>
 
     </div>
-
-
-</body>
+  </body>
 </html>
